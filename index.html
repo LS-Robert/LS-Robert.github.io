@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resell OF | Cryptocurrency Flags</title>
+    <meta name="description"
+        content="Get real-time crypto signals and analysis with our subscription plans. Access exclusive Telegram groups and personalized support. Subscribe now!">
+    <meta name="keywords" content="crypto signals, cryptocurrency, telegram group, market analysis, technical support">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/sub_styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ig.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="fondo.jpg" type="image/x-icon">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta property="og:title" content="Cryptocurrency Flags | Subscribe for Crypto Signals">
+    <meta property="og:description"
+        content="Get real-time crypto signals and analysis with our subscription plans. Access exclusive Telegram groups and personalized support. Subscribe now!">
+    <meta property="og:image" content="https://www.instagram.com/resellof_eu/">
+    <meta property="og:url" content="https://www.instagram.com/resellof_eu/">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+
+    <style>
+        /* Estilos para el formulario de correo electrónico */
+        #emailForm {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            color: black;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #emailInput {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+
+        #emailSubmit {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #6c5ce7;
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+
+        /* Estilos para la flecha hacia abajo */
+        #scrollDown {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #scrollDown i {
+            font-size: 24px;
+            color: #6c5ce7;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        #scrollDown i:hover {
+            transform: translateY(3px);
+        }
+
+        /* Estilos personalizados para posicionar el tooltip */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">RESELL OF</h1>
+            <h2 class="header-title2">Crypto Signals</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="about-heading">About Us</h2>
+            <p class="about-description">Welcome to RESELL OF Cryptocurrency Flags, your gateway to real-time
+                cryptocurrency signals and analysis.</p>
+            <p class="about-description">At RESELL OF, we specialize in providing curated crypto trading signals and
+                insights to help you navigate the volatile digital asset markets with confidence.</p>
+            <p class="about-description">Our subscription plans offer exclusive benefits tailored to your trading
+                needs:</p>
+            <ul class="about-list">
+                <li>Access to real-time signals</li>
+                <li>Exclusive Telegram groups for discussions and updates</li>
+                <li>Comprehensive market analysis and insights</li>
+                <li>Personalized technical support</li>
+                <li>Insider information and educational resources</li>
+                <li>Customized analysis and mentorship (with higher-tier plans)</li>
+            </ul>
+            <p class="about-description">Whether you're new to crypto or a seasoned trader, our plans cater to all
+                levels of expertise. Join our community today and elevate your crypto trading journey.</p>
+
+            <!-- Flecha hacia abajo -->
+            <div id="scrollDown">
+                <i class="fas fa-chevron-down" onclick="scrollToPlans()"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="subscriptions">
+        <div class="card">
+            <h2 class="title">Bronze Plan</h2>
+            <p class="pricing">19 € <span class="pricing-time">/ 3 month</span></p>
+            <div class="sub-title">
+                <p>Access to 10 signals/month</p>
+                <ul class="list">
+                    <li><span class="check">✓</span> Exclusive Telegram group</li>
+                    <li><span class="check">✓</span> Weekly market analysis</li>
+                    <li><span class="check">✓</span> Basic technical support</li>
+                    <li><span class="check">✓</span> Market news updates</li>
+                    <li><span class="check">✓</span> Insider information</li>
+                </ul>
+                <button class="button" onclick="setPlan('Bronze Plan')">Buy</button>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="title">Gold Plan</h2>
+            <p class="pricing">39 € <span class="pricing-time">/ 3 month</span></p>
+            <div class="sub-title">
+                <p>Access to 20 signals/month</p>
+                <ul class="list">
+                    <li><span class="check">✓</span> Exclusive Telegram group</li>
+                    <li><span class="check">✓</span> Weekly market analysis</li>
+                    <li><span class="check">✓</span> Advanced technical support</li>
+                    <li><span class="check">✓</span> Real-time signals</li>
+                    <li><span class="check">✓</span> Insider information</li>
+                    <li><span class="check">✓</span> Exclusive Discord server (PLUS)</li>
+                </ul>
+                <button class="button" onclick="setPlan('Gold Plan')">Buy</button>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="title">Amethyst Plan</h2>
+            <p class="pricing">79 € <span class="pricing-time">/ 3 month</span></p>
+            <div class="sub-title">
+                <p>Unlimited access to signals</p>
+                <ul class="list">
+                    <li><span class="check">✓</span> Exclusive Telegram group</li>
+                    <li><span class="check">✓</span> Customized analysis</li>
+                    <li><span class="check">✓</span> Premium support</li>
+                    <li><span class="check">✓</span> Automated signals</li>
+                    <li><span class="check">✓</span> Individual mentorship</li>
+                    <li><span class="check">✓</span> Exclusive Discord server (PLUS)</li>
+                </ul>
+                <button class="button" onclick="setPlan('Amethyst Plan')">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip con icono de Instagram -->
+    <div class="tooltip-container">
+        <div class="tooltip">
+            <div class="profile">
+                <div class="user">
+                    <div class="img">
+                        <img src="fondo.jpg" alt="Logo de ResellOF">
+                    </div>
+                    <div class="details">
+                        <div class="name">ResellOF</div>
+                        <div class="username">@resellof_eu</div>
+                    </div>
+                </div>
+                <div class="about">1200+ Followers</div>
+            </div>
+        </div>
+        <div class="text">
+            <a class="icon" href="https://www.instagram.com/resellof_eu/">
+                <div class="layer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="instagramSVG">
+                        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="text">Instagram</div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Formulario de correo electrónico oculto por defecto -->
+    <div id="emailForm">
+        <span class="close-btn" onclick="closeEmailForm()">&times;</span> <!-- Botón de cierre -->
+        <h3>Enter your email to proceed with payment</h3>
+        <input type="email" id="emailInput" placeholder="Your email">
+        <button id="emailSubmit" onclick="submitEmailForm()">Submit</button>
+    </div>
+
+
+    <!-- Optional: Scripts at the end of body for faster loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        const _0x1b05e8 = _0x1a95; (function (_0xad9308, _0x55fa37) { const _0x568550 = _0x1a95, _0x251ebc = _0xad9308(); while (!![]) { try { const _0x2a468e = parseInt(_0x568550(0xb5)) / (-0x4b0 + 0x8ad + -0x3fc) * (parseInt(_0x568550(0xc7)) / (0x1ce9 * 0x1 + -0x1c03 + 0x1 * -0xe4)) + parseInt(_0x568550(0xd3)) / (0x191d * 0x1 + -0xd63 + 0x1 * -0xbb7) + -parseInt(_0x568550(0xb4)) / (0x1 * 0x2535 + -0xf3a + 0x1 * -0x15f7) * (-parseInt(_0x568550(0xdd)) / (-0x89 * -0x1 + -0x1f61 * 0x1 + 0x1edd)) + -parseInt(_0x568550(0xbc)) / (-0x3e4 + -0x6d * -0x2f + -0x1019) + parseInt(_0x568550(0xba)) / (0xaf0 + -0x14de + -0x1 * -0x9f5) * (parseInt(_0x568550(0xcc)) / (0x80 * -0x4c + 0x143d * -0x1 + -0x7 * -0x853)) + -parseInt(_0x568550(0xb8)) / (-0x13 * -0x98 + -0x1 * 0x247d + 0x2ce * 0x9) * (parseInt(_0x568550(0xcb)) / (-0x2 * -0xd6 + -0x15f2 + 0x1450)) + -parseInt(_0x568550(0xca)) / (-0x1 * -0x78e + 0xd * 0x2fb + -0x1f * 0x17e) * (parseInt(_0x568550(0xc6)) / (0x5 * 0x4ac + -0x10d * -0x3 + -0x54b * 0x5)); if (_0x2a468e === _0x55fa37) break; else _0x251ebc['push'](_0x251ebc['shift']()); } catch (_0x4194d1) { _0x251ebc['push'](_0x251ebc['shift']()); } } }(_0x1c37, -0x2c * 0x371b + 0x43 * -0x58fd + 0x2def31), emailjs[_0x1b05e8(0xc5)]({ 'publicKey': _0x1b05e8(0xdc) })); function setPlan(_0x57e96d) { const _0x2b8924 = _0x1b05e8; document[_0x2b8924(0xbf)](_0x2b8924(0xd0))['setAttribute'](_0x2b8924(0xc4), _0x57e96d), showEmailForm(); } function _0x1a95(_0x2463a1, _0x45eac8) { const _0x592e50 = _0x1c37(); return _0x1a95 = function (_0x429ad1, _0x1b5e4d) { _0x429ad1 = _0x429ad1 - (0x127e + 0x237c + -0x3547); let _0x57e96d = _0x592e50[_0x429ad1]; return _0x57e96d; }, _0x1a95(_0x2463a1, _0x45eac8); } function showEmailForm() { const _0x266cb6 = _0x1b05e8; document[_0x266cb6(0xbf)](_0x266cb6(0xd0))[_0x266cb6(0xd1)]['display'] = _0x266cb6(0xd2); } function closeEmailForm() { const _0x24ba14 = _0x1b05e8; document['getElementById']('emailForm')[_0x24ba14(0xd1)][_0x24ba14(0xc8)] = _0x24ba14(0xbe), document[_0x24ba14(0xbf)](_0x24ba14(0xb9))[_0x24ba14(0xd9)] = ''; } function _0x1c37() { const _0x4fcebb = ['Correo\x20enviado\x20con\x20éxito!', 'service_qsh6arj', 'data-plan', 'init', '4727460nAzyeo', '264cVCrzR', 'display', 'success', '33MYabFm', '52520wkTTnB', '296humOfI', 'then', 'status', 'querySelector', 'emailForm', 'style', 'block', '2279595XPKbXx', 'template_givcjf9', '¡Éxito!', 'Gracias\x20por\x20tu\x20interés.\x20Te\x20contactaremos\x20pronto\x20para\x20proceder\x20con\x20el\x20pago.', 'test', 'Error\x20al\x20enviar\x20el\x20correo:', 'value', '.subscriptions', 'getAttribute', '_oeMxZdPuFjVcdT3j', '5SWCNIN', 'smooth', '4112888FiueUG', '4483mbQKaD', 'error', 'Por\x20favor,\x20ingresa\x20una\x20dirección\x20de\x20correo\x20electrónico\x20válida.', '1485OWXeGF', 'emailInput', '313761evZTWF', 'log', '6759186wSrfqH', 'catch', 'none', 'getElementById', 'text', 'Ocurrió\x20un\x20error.\x20Por\x20favor,\x20inténtalo\x20nuevamente\x20más\x20tarde.']; _0x1c37 = function () { return _0x4fcebb; }; return _0x1c37(); } function submitEmailForm() { const _0x327c60 = _0x1b05e8, _0x541c33 = document[_0x327c60(0xbf)](_0x327c60(0xb9))[_0x327c60(0xd9)], _0x7b0e6f = document[_0x327c60(0xbf)](_0x327c60(0xd0))[_0x327c60(0xdb)](_0x327c60(0xc4)); if (!isValidEmail(_0x541c33)) { alert(_0x327c60(0xb7)); return; } emailjs['send'](_0x327c60(0xc3), _0x327c60(0xd4), { 'userEmail': _0x541c33, 'selectedPlan': _0x7b0e6f })[_0x327c60(0xcd)](function (_0x567cf9) { const _0x3d893d = _0x327c60; console[_0x3d893d(0xbb)](_0x3d893d(0xc2), _0x567cf9[_0x3d893d(0xce)], _0x567cf9[_0x3d893d(0xc0)]), swal({ 'title': _0x3d893d(0xd5), 'text': _0x3d893d(0xd6), 'icon': _0x3d893d(0xc9) }), closeEmailForm(); })[_0x327c60(0xbd)](function (_0x54468a) { const _0x28cabe = _0x327c60; console[_0x28cabe(0xb6)](_0x28cabe(0xd8), _0x54468a), swal({ 'title': '¡Error!', 'text': _0x28cabe(0xc1), 'icon': _0x28cabe(0xb6) }); }); } function isValidEmail(_0x1b4447) { const _0x51b96e = _0x1b05e8, _0x7c43a4 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; return _0x7c43a4[_0x51b96e(0xd7)](_0x1b4447); } function scrollToPlans() { const _0x41ec8c = _0x1b05e8, _0x3248e2 = document[_0x41ec8c(0xcf)](_0x41ec8c(0xda)); _0x3248e2 && _0x3248e2['scrollIntoView']({ 'behavior': _0x41ec8c(0xb3) }); }    </script>
+
+</html>
