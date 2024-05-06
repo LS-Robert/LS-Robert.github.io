@@ -47,16 +47,13 @@ body {
 }
 
 #about {
-  padding: 200px 0;
-  background-image: linear-gradient(to bottom, #333333, #1a1a1a);
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-  background-image: url('/fondo.jpg');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-
+    padding: 200px 0;
+    background-image: linear-gradient(to bottom, #333333, #1a1a1a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-image: url('/fondo.jpg'); 
+    background-size: cover; 
+    background-position: center top; 
+    background-repeat: no-repeat; 
 }
 
 .about-heading {
